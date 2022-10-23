@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    background-color: aqua;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blue;
+    border-radius: 30px;
+    height: 10px;
+}
+body{
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.6;    
+}
+nav{
+    background-image: url(sea1.jpeg);
+    background-size: cover; 
+    background-position: center;
+}
+.bar ul li{
+     list-style-type: none;
+}
+.bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
+    position: relative;
+    animation: list;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes list{
+           0%{top: -50px;}
+           100%{top: 0px;}
+}
+.bar ul{
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: 1px 1px .1 black ;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+}
+#click{
+    visibility: hidden;
+    opacity: 0;
+}
+@media all and (max-width: 768px){
+   #click{
+    visibility: visible;
+    opacity: 1;
+    font-size: 2rem;
+    float: left;
+   }
+   .bar ul{
+    display:inline-block;
+   text-align: justify;
+   font-size: .5rem;
+   width:100%;
+   height:25%;
+   margin: 0;
+   padding: 0;
+   }
+   .bar ul li:hover{
+    background-color:aqua;
+    color: white;
+   }
+  #showcase{
+    position:relative;
+     bottom: 7vh;
+    
+   }    
+}
+.head{
+    text-transform: uppercase;
+}
+#showcase{ 
+    color:black; 
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+#showcase h1{
+    position: relative;
+    animation: heading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#showcase p{
+    position: relative;
+    animation: content;
+    animation-duration: 2s;
+     animation-fill-mode: forwards;
+}
+#showcase .btn{
+    opacity: 0;
+    position: relative;
+    animation: button;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+@keyframes heading{
+    0% {left:-1000px;}
+    100% {left:0;}
+}
+@keyframes content{
+    0%{right: -1000px;}
+    100%{right: 0;}
+}
+@keyframes button{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.btn{
+    margin-top: 20px;
+}
+.btn{
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.btn:hover{
+    transform:rotateY(180deg);
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+.flex-2{
+    display: flex;
+    justify-content: space-between;
+}
+.flex{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+}
+.flex a{
+       text-decoration: none;
+       color: black;
+}
+.sug{
+    text-align: center;
+    width: 40vw;
+    background-color: lightgrey;
+}
+.flex-1{
+    width: 50vw;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.sec-a{
+    height: 65vh;
+    display: flex;
+}
+.sec-1{
+    color: tomato;
+    background-image: url(sea3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100vw;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.sec-2{
+    background-image: url(sea4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+     width: 100vw;
+     text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.sec-1:hover{
+        top: 100px;
+}
+.sec-2:hover{
+    color: orangered;
+}
+.sec{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+     text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+}
+.div-1{
+    background-image: url(sea2.jpeg);
+    background-size: cover; 
+    background-position: center;
+    width: 33vw; 
+}
+.div-2{
+    background-image: url(hotel.jpeg);
+    background-size: cover; 
+    background-position: center;
+    width: 33vw; 
+}
+.div-3{
+    background-image: url(taj.jpeg);
+    background-size: cover; 
+    background-position: center;
+    width: 33vw;
+    opacity: 0.7;
+}
+.div-1:hover{
+    color: aqua;
+}
+.div-2:hover{
+    color: blue;
+}
+.div-3:hover{
+      color: black;
+      opacity: 1;
+}
+footer{
+    
+    height: 15vh;
+    text-align:center;
+    color: white;
+    background-color: black;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+
+}
+button{
+    cursor: pointer;
+}
+.query{
+    background-color:aqua;
+    padding: 5px;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    opacity: 0;
+    animation: opacity;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+@keyframes opacity{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.report{
+    background-color:red;
+    color:black ;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    opacity: 0;
+    animation: report;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+
+}
+@keyframes report{
+         0%{opacity: 0;}
+         100%{opacity: 1;}
+}
+textarea{
+         background-color: lightgreen;
+         border: 1px solid lightgreen;
+         font-size: 1rem;
+}
+textarea:hover{
+    background-color: white;
+    color: green;
+}
+#view:hover{
+     text-decoration: underline;
+      text-decoration-color: black;
+      color: black;
+}
+#arrow:hover{
+      text-decoration: underline;
+      text-decoration-color: black;
+}
+.query:hover{
+            transform:rotateY(180deg);   
+}
+.report:hover{
+    transform:rotateY(180deg); 
+}
